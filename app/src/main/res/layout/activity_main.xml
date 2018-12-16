@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959">
+
+        <ImageButton
+            android:id="@+id/fastRewindButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="fastRewindMedia"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="playMedia"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="pauseMedia"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/fastForwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="fastForwardMedia"
+            app:srcCompat="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/iAmPickleRickButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="I am Pickle Rick!" />
+
+        <Button
+            android:id="@+id/andThatsTheButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="And that's the wayyyy news goes" />
+
+        <Button
+            android:id="@+id/grassTasteBadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Graaaaass tastes bad!" />
+
+        <Button
+            android:id="@+id/isAnyoneHereButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Is anyone here even real?" />
+
+        <Button
+            android:id="@+id/robberBabyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Rubber baby buggy bumpers" />
+
+        <Button
+            android:id="@+id/thatsWhatIAlwaysButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Shumshumschilpiddydah!" />
+
+        <Button
+            android:id="@+id/wobbaLobbaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Wubba lubba dub dub!" />
+
+        <Button
+            android:id="@+id/rickyTickyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeTrack"
+            android:text="Rikki-Tikki-Tavi, Bitch!" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <SeekBar
+        android:id="@+id/scrubSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>
